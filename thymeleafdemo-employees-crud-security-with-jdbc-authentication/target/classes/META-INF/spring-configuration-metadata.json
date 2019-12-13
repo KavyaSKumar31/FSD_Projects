@@ -1,0 +1,60 @@
+{
+  "groups": [
+    {
+      "name": "app.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.luv2code.springboot.thymeleafdemo.config.DemoDataSourceConfig",
+      "sourceMethod": "public javax.sql.DataSource appDataSource() "
+    },
+    {
+      "name": "security.datasource",
+      "type": "javax.sql.DataSource",
+      "sourceType": "com.luv2code.springboot.thymeleafdemo.config.DemoDataSourceConfig",
+      "sourceMethod": "public javax.sql.DataSource securityDataSource() "
+    },
+    {
+      "name": "spring.data.jpa.entity",
+      "type": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean",
+      "sourceType": "com.luv2code.springboot.thymeleafdemo.config.DemoDataSourceConfig",
+      "sourceMethod": "public org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean entityManagerFactory(org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder, javax.sql.DataSource) "
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.data.jpa.entity.bootstrap-executor",
+      "type": "org.springframework.core.task.AsyncTaskExecutor",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.entity-manager-interface",
+      "type": "java.lang.Class<? extends javax.persistence.EntityManager>",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.jpa-dialect",
+      "type": "org.springframework.orm.jpa.JpaDialect",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.jpa-property-map",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.jpa-vendor-adapter",
+      "type": "org.springframework.orm.jpa.JpaVendorAdapter",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.persistence-provider",
+      "type": "javax.persistence.spi.PersistenceProvider",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    },
+    {
+      "name": "spring.data.jpa.entity.persistence-unit-name",
+      "type": "java.lang.String",
+      "sourceType": "org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
+    }
+  ],
+  "hints": []
+}
